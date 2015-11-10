@@ -14,6 +14,7 @@ derby.log
 spring-test/test-output/
 .gradle
 argfile*
+pom.xml
 activemq-data/
 
 /build
@@ -28,6 +29,10 @@ target/
 spring-*/src/main/java/META-INF/MANIFEST.MF
 
 # IDEA artifacts and output dirs
+*.iml
+*.ipr
+*.iws
+.idea
 out
 test-output
 atlassian-ide-plugin.xml
