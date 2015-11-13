@@ -17,24 +17,37 @@
     <link href="${coreCss}" rel="stylesheet" />
 </head>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top navbar-transparent">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">MainPage</a>
+            <a href="./" class="navbar-brand">
+                <img src="http://pewex.pl/pictures/h3/h6/32-237790-producer_product-lego.png" height="20px">Alex Coming
+            </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/hello">WorkLink</a>
-        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+                </li>
+                <li>
+                    <a class="navbar-brand" href="/hello">WorkLink</a>
+                </li>
+                <li>
+                    <a class="navbar-brand" href="/login">Login</a>
+                </li>
+            </ul>
 
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/login">Login</a>
-        </div>
-
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">About</a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-brand" href="#">About</a></li>
+            </ul>
         </div>
     </div>
-</nav>
+</div>
 
 <div class="jumbotron">
     <div class="container">
