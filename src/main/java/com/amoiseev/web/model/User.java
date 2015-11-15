@@ -17,6 +17,14 @@ public class User {
     @Size(min = 6, max = 15, message = "Your password must between 6 and 15 characters")
     private String password;
 
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+    public User() {
+    }
+
     public String getEmail() {
         return email;
     }
