@@ -11,17 +11,63 @@
     <name>SpringExample</name>
 
     <properties>
-        <jdk.version>1.6</jdk.version>
-        <spring.version>3.2.13.RELEASE</spring.version>
+        <spring.version>4.1.5.RELEASE</spring.version>
+        <hibernate.version>4.3.8.Final</hibernate.version>
         <jstl.version>1.2</jstl.version>
         <dbh2.version>1.4.190</dbh2.version>
+        <servlet-api-version>3.1.0</servlet-api-version>
+        <jsp-version>2.1</jsp-version>
+        <jstl-version>1.2</jstl-version>
     </properties>
     <dependencies>
+        <!-- Spring 4 dependencies -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Hibernate 4 dependencies -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>${hibernate.version}</version>
         </dependency>
 
         <dependency>
@@ -36,7 +82,6 @@
             <version>1.1.0.Final</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -49,11 +94,27 @@
             <version>${dbh2.version}</version>
         </dependency>
 
+        <!-- Servlet and JSP -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet-api-version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>${jsp-version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JSTL dependency -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl-version}</version>
+        </dependency>
+
 
     </dependencies>
     
